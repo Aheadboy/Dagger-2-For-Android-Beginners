@@ -7,7 +7,6 @@ import javax.annotation.Generated;
   comments = "https://google.github.io/dagger"
 )
 public final class DaggerBattleComponent implements BattleComponent {
-
   private DaggerBattleComponent(Builder builder) {}
 
   public static Builder builder() {
