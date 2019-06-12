@@ -7,6 +7,7 @@ import javax.inject.Inject;
  */
 public class Starks implements House {
 
+    //we need to tell Dagger 2 that these are the dependencies that need to be injected
     @Inject
     public Starks(){
 

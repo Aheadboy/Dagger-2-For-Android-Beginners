@@ -11,7 +11,7 @@ public class War {
 
     private Boltons boltons;
 
-    @Inject
+    @Inject //These two dependencies, go to the Class War. Hence we need to mark it as inject in the War class constructor as well
     public War(Starks starks, Boltons bolton){
         this.starks = starks;
         this.boltons = bolton;

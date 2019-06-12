@@ -7,6 +7,11 @@ import dagger.Component;
  * Created by Hari on 04/11/17.
  */
 
+
+/**
+ * 这个接口会被Dagger去实现。
+ * 你加了@Component注解。
+ */
 @Component
 interface BattleComponent {
     War getWar();

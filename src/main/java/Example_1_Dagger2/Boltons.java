@@ -10,7 +10,7 @@ import javax.inject.Inject;
  */
 public class Boltons implements House {
 
-   @Inject
+   @Inject    //we need to tell Dagger 2 that these are the dependencies that need to be injected
    public Boltons(){
 
     }
