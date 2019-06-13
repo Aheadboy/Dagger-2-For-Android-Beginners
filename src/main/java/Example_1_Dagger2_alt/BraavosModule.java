@@ -6,7 +6,7 @@ import dagger.Provides;
 /**
  * Created by Hari on 15/11/17.
  */
-@Module
+@Module//目的在于，提供不能修改源码的对象，无法在构造添加@Inject注解的替代方案。
 public class BraavosModule {
 
     Cash cash;

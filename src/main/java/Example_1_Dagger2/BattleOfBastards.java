@@ -15,6 +15,9 @@ import dagger.Component;
 @Component
 interface BattleComponent {
     War getWar();
+    //adding more methods
+    Starks getStarks();
+    Boltons getBoltons();
 }
 
 public class BattleOfBastards {

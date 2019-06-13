@@ -22,8 +22,7 @@ public class BattleOfBastards {
         Cash cash = new Cash();
         Soldiers soldiers = new Soldiers();
 
-        BattleComponent component = DaggerBattleComponent
-                .builder().braavosModule(new BraavosModule(cash,soldiers)).build();
+        BattleComponent component = DaggerBattleComponent.builder().braavosModule(new BraavosModule(cash,soldiers)).build();//这样构造一次，应用生命周期内其他地方也可以用。
         War war = component.getWar();
         war.prepare();
         war.report();

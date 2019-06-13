@@ -11,7 +11,7 @@ public class Starks {
     //Feild injection
 //          成员变量注入
     @Inject
-    Allies allies;
+    public Allies allies;
 
     //Constructor injection
 //  构造函数注入

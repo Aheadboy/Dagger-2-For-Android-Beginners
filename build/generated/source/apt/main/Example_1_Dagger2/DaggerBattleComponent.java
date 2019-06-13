@@ -19,7 +19,17 @@ public final class DaggerBattleComponent implements BattleComponent {
 
   @Override
   public War getWar() {
-    return new War(new Starks(), new Boltons());
+    return new War(getStarks(), getBoltons());
+  }
+
+  @Override
+  public Starks getStarks() {
+    return new Starks();
+  }
+
+  @Override
+  public Boltons getBoltons() {
+    return new Boltons();
   }
 
   public static final class Builder {
